@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 25px 25px rgba(0,0,0,0.2);
+        }
+
+        .joke-text {
+            font-size: 18px;
+            color: #444;
+            min-height: 60px;
+        }
+
+        .btn-custom {
+            border-radius: 25px;
+            padding: 10px 30px;
+        }
+        .container{
+            width: 650px;
+            height: 190px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <div class="card p-4">
+
+        <h2 class="mb-3">😂 Joke Generator</h2>
+
+        <!-- Joke Display -->
+        <p id="joke" class="joke-text">
+            {{ joke }}
+        </p>
+
+        <!-- Button -->
+        <button type="button" onclick="location.reload()" class="btn btn-primary">
+    Generate Joke
+</button>
+
+    </div>
+</div>
+</body>
+</html>
